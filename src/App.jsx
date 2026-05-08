@@ -116,6 +116,13 @@ function App() {
 
   const closeMobileMenu = () => setIsMobileMenuOpen(false)
 
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
   return (
     <div className="page-shell">
       <header className="top-nav">
@@ -200,7 +207,7 @@ function App() {
             <span>Keeffe</span>
           </h1>
           <p className="description">Racing driver from Ireland.</p>
-          <button className="cta" type="button">
+          <button className="cta" type="button" onClick={() => scrollToSection('about')}>
             Learn More
           </button>
         </section>
