@@ -189,6 +189,7 @@ function App() {
 
       <main className="hero-grid">
         <section className="hero-image" aria-label="Driver racing on track">
+          <img src="/main_picture.jpeg" alt="Ben O Keeffe racing on track" className="hero-image-img" />
           <div className="image-fade" />
         </section>
 
