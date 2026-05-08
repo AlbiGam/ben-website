@@ -216,12 +216,6 @@ function App() {
             Learn More
           </button>
         </section>
-
-        <div className="slider-dots" aria-hidden="true">
-          <span className="dot active" />
-          <span className="dot" />
-          <span className="dot" />
-        </div>
       </main>
 
       <section className="about-section" id="about">
