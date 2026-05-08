@@ -93,6 +93,7 @@ const calendarEvents = [
 
 function App() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [isCalendarExpanded, setIsCalendarExpanded] = useState(false)
 
   useEffect(() => {
     if (!isMobileMenuOpen) {
@@ -122,6 +123,10 @@ function App() {
       element.scrollIntoView({ behavior: 'smooth' })
     }
   }
+
+  const visibleCalendarEvents = isCalendarExpanded
+    ? calendarEvents
+    : calendarEvents.slice(0, 4)
 
   return (
     <div className="page-shell">
@@ -315,7 +320,7 @@ function App() {
         </div>
 
         <div className="calendar-list" aria-label="2026 race calendar">
-          {calendarEvents.map((event) => (
+          {visibleCalendarEvents.map((event) => (
             <article className="calendar-row" key={`${event.date}-${event.event}`}>
               <p className="calendar-date">{event.date}</p>
               <p className="calendar-event">{event.event}</p>
@@ -326,6 +331,18 @@ function App() {
             </article>
           ))}
         </div>
+
+        {calendarEvents.length > 4 ? (
+          <div className="calendar-actions">
+            <button
+              className="calendar-view-all"
+              type="button"
+              onClick={() => setIsCalendarExpanded((current) => !current)}
+            >
+              {isCalendarExpanded ? 'Show Less' : 'View All'}
+            </button>
+          </div>
+        ) : null}
       </section>
 
       <section className="contact-section" id="contact">
