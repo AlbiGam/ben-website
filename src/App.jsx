@@ -4,25 +4,25 @@ import { useEffect, useState } from 'react'
 const partners = [
   {
     name: 'NOKAD',
-    logo: '/NOKAD.jpeg',
+    logo: 'NOKAD.jpeg',
     description:
       'Noel O Keeffe Auto Developments (NOKAD) was founded in 2001 by Noel O Keeffe to proudly serve automobile owners in the Waterford area. Now proudly by his side, Noel\'s son Colm has joined the family business. Together they are building the company from strength to strength, into the successful multifunctional business we see today.',
   },
   {
     name: 'Naas Road Autos',
-    logo: '/naas_road_autos.jpeg',
+    logo: 'naas_road_autos.jpeg',
     description:
       'As one of Dublin\'s leading independent car dealers, Naas Road Autos offers top quality cars at superb prices. They carry a wide range of vehicles including saloons, hatchbacks, estates, MPVs and SUVs to suit all budgets, with stock changing daily and every vehicle inspected in their workshop before sale.',
   },
   {
     name: 'Tom Geraghty Tyre Services',
-    logo: '/tom_geraghity_tyres.jpeg',
+    logo: 'tom_geraghity_tyres.jpeg',
     description:
       'Tom Geraghty Tyre Services Ltd was established in 1981 as the first independent tyre company in Waterford. Since then, it has become a major tyre business in the region for choice, service and price, offering standout value on alloy wheel and tyre packages on quality wheels.',
   },
   {
     name: 'Wyse\'s BMW Breakers',
-    logo: '/wyes_bmw_breakers.jpeg',
+    logo: 'wyes_bmw_breakers.jpeg',
     description:
       'Based in Clogheen, Co. Tipperary, Wyse\'s BMW Breakers is Ireland\'s leading specialist BMW vehicle dismantler and recycled parts supplier. Established in 2002, the company has built unrivalled expertise and become a first choice for quality BMW recycled parts across Ireland.',
   },
@@ -120,7 +120,7 @@ function App() {
     <div className="page-shell">
       <header className="top-nav">
         <div className="brand-block">
-          <img className="brand-logo" src="/logo.png" alt="Ben O Keeffe logo" />
+          <img className="brand-logo" src="logo.png" alt="Ben O Keeffe logo" />
           <div className="brand-text-wrap">
             <span className="brand-name">BEN O KEEFFE</span>
           </div>
@@ -165,7 +165,7 @@ function App() {
         aria-label="Mobile navigation"
       >
         <div className="mobile-sidebar-head">
-          <img className="mobile-sidebar-logo" src="/logo.png" alt="Ben O Keeffe logo" />
+          <img className="mobile-sidebar-logo" src="logo.png" alt="Ben O Keeffe logo" />
           <button className="mobile-sidebar-close" type="button" onClick={closeMobileMenu}>
             Close
           </button>
@@ -189,7 +189,7 @@ function App() {
 
       <main className="hero-grid">
         <section className="hero-image" aria-label="Driver racing on track">
-          <img src="/main_picture.jpeg" alt="Ben O Keeffe racing on track" className="hero-image-img" />
+          <img src="main_picture.jpeg" alt="Ben O Keeffe racing on track" className="hero-image-img" />
           <div className="image-fade" />
         </section>
 
@@ -236,7 +236,7 @@ function App() {
         </div>
 
         <aside className="about-card" aria-label="Ben O Keeffe profile highlights">
-          <img src="/about_me.jpeg" alt="Ben O Keeffe racing kart" />
+          <img src="about_me.jpeg" alt="Ben O Keeffe racing kart" />
           <div className="about-card-body">
             <h3>
               BEN <span>O&apos;KEEFFE</span>
@@ -303,7 +303,7 @@ function App() {
           </div>
 
           <div className="calendar-image-wrap">
-            <img src="/calendar.jpeg" alt="Ben O Keeffe competing during a race weekend" />
+            <img src="calendar.jpeg" alt="Ben O Keeffe competing during a race weekend" />
           </div>
         </div>
 
@@ -323,7 +323,7 @@ function App() {
 
       <section className="contact-section" id="contact">
         <div className="contact-photo-wrap">
-          <img src="/contact.jpeg" alt="Ben O Keeffe at the track" />
+          <img src="contact.jpeg" alt="Ben O Keeffe at the track" />
         </div>
 
         <div className="contact-content">
